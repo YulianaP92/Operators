@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Operators_10_12_2018
+namespace B3_P2_9.CheckResultAddition
 {
     class Program
     {
@@ -16,7 +16,12 @@ namespace Operators_10_12_2018
             Console.Write("Enter the second number: ");
             var number_2 = Convert.ToInt32(Console.ReadLine());
             var sum = number_1 + number_2;
-            Console.WriteLine("The sum of the numbers {0} and {1} = {2}", number_1, number_2, sum);
+            Console.Write("Enter the sum of numbers: ");
+            var result = Convert.ToInt32(Console.ReadLine());
+            if (result == sum)
+                Console.WriteLine("True");
+            else
+                Console.WriteLine("False");
         }
     }
 }
